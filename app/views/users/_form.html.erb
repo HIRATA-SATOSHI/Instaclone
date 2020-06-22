@@ -12,6 +12,11 @@
   <% end %>
 
   <div class="field">
+    <%= form.label :image %>
+    <%= form.file_field :image %>
+  </div>
+
+  <div class="field">
     <%= form.label :name %>
     <%= form.text_field :name %>
   </div>
@@ -22,13 +27,8 @@
   </div>
 
   <div class="field">
-    <%= form.label :password_digest %>
+    <%= form.label :password %>
     <%= form.text_field :password_digest %>
-  </div>
-
-  <div class="field">
-    <%= form.label :image %>
-    <%= form.text_area :image %>
   </div>
 
   <div class="actions">

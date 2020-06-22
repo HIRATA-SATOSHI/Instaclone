@@ -5,10 +5,10 @@
 <table>
   <thead>
     <tr>
+      <th>Image</th>
       <th>Name</th>
       <th>Email</th>
       <th>Password digest</th>
-      <th>Image</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,10 +16,10 @@
   <tbody>
     <% @users.each do |user| %>
       <tr>
+        <td><%= image_tag user.image.url %></td>
         <td><%= user.name %></td>
         <td><%= user.email %></td>
-        <td><%= user.password_digest %></td>
-        <td><%= user.image %></td>
+        <td><%= user.password_digest %></td>        
         <td><%= link_to 'Show', user %></td>
         <td><%= link_to 'Edit', edit_user_path(user) %></td>
         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>

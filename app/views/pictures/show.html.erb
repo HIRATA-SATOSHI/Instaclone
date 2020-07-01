@@ -18,5 +18,10 @@
   <% end %>
 <% end %>
 
-<%= link_to 'Edit', edit_picture_path(@picture) %> |
+<% if @picture.user_id == current_user.id %>
+  <%= link_to 'Edit', edit_picture_path(@picture) %> 
+  <%= link_to 'Destroy', @picture, method: :delete, data: { confirm: 'Are you sure?' } %>
+<% end %>
+
+<%= link_to 'Edit', edit_picture_path(@picture) %> 
 <%= link_to 'Back', pictures_path %>

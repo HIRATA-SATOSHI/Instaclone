@@ -2,28 +2,19 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.5'
-
-
+gem 'faker'
+gem 'carrierwave'
+gem 'mini_magick'
 gem 'rails', '~> 5.2.4'
-
 gem 'pg', '>= 0.18', '< 2.0'
-
 gem 'puma', '~> 3.11'
-
 gem 'sass-rails', '~> 5.0'
-
 gem 'uglifier', '>= 1.3.0'
-
 gem 'coffee-rails', '~> 4.2'
-
 gem 'turbolinks', '~> 5'
-
 gem 'jbuilder', '~> 2.5'
-
 gem 'bcrypt', '3.1.11'
-
 gem 'bootsnap', '>= 1.1.0', require: false
-
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
@@ -45,7 +36,6 @@ group :test do
   gem 'binding_of_caller'
 end
 
-
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem 'carrierwave'
-gem 'mini_magick'
+
+

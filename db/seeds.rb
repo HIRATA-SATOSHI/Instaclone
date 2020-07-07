@@ -3,8 +3,9 @@
     email = Faker::Internet.email
     password = "password"
     User.create!(name: name,
-                 email: email,
-                 password: password,
-                 password_confirmation: password,
-                 )
+    email: email,
+    image: open("./public/uploads/user/image/1/Sample＿goli.jpg"),
+    password: password,
+    password_confirmation: password,
+    )
   end

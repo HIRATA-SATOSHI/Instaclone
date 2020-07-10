@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>InstaClone</title>
+    <title>Instant Clone</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+  <header>
+    <div class="jumbotron">
+      <h1> Instant Clone</h1>
+      <p class="share"> Share your lovely moments with photos ♬</p>
+   </div>
+  </header>
 
   <body>
     <% flash.each do |key, value| %>

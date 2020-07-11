@@ -17,9 +17,9 @@
         <td><%= image_tag picture.image.url %></td>
         <td><%= picture.content %></td>
         <td><%= picture.user.name %></td>
-        <td><%= link_to 'Show', picture %></td>
-        <td><%= link_to 'Edit', edit_picture_path(picture) %></td>
-        <td><%= link_to 'Destroy', picture, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><button type="button" class="btn btn-primary btn-sm"><%= link_to 'Show', picture %></button></td>
+        <td><button type="button" class="btn btn-success btn-sm"><%= link_to 'Edit', edit_picture_path(picture) %></button></td>
+        <td><button type="button" class="btn btn-danger btn-sm"><%= link_to 'Destroy', picture, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
       </tr>
     <% end %>
   </tbody>
@@ -27,4 +27,4 @@
 
 <br>
 
-<%= link_to 'New Picture', new_picture_path %>
+<button type="button" class="btn btn-info"><%= link_to 'New Picture', new_picture_path %></button>

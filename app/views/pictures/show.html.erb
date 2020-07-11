@@ -19,9 +19,9 @@
 <% end %>
 
 <% if @picture.user_id == current_user.id %>
-  <%= link_to 'Edit', edit_picture_path(@picture) %> 
-  <%= link_to 'Destroy', @picture, method: :delete, data: { confirm: 'Are you sure?' } %>
+  <button type="button" class="btn btn-success btn-sm"><%= link_to 'Edit', edit_picture_path(@picture) %></button> 
+  <button type="button" class="btn btn-danger btn-sm"><%= link_to 'Destroy', @picture, method: :delete, data: { confirm: 'Are you sure?' } %></button>
 <% end %>
 
-<%= link_to 'Edit', edit_picture_path(@picture) %> 
-<%= link_to 'Back', pictures_path %>
+
+<button type="button" class="btn btn-dark btn-sm"><%= link_to 'Back', pictures_path %></button>

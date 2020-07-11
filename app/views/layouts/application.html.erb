@@ -5,12 +5,13 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <header>
     <div class="jumbotron">
-      <h1> Instant Clone</h1>
-      <p class="share"> Share your lovely moments with photos ♬</p>
+      <h1 class="Insta"> Instant Clone</h1>
+      <p class="share"> <br> Share your lovely moments with photos ♬</p>
    </div>
   </header>
 
@@ -19,11 +20,11 @@
       <%= content_tag(:div, value, class: "#{key}") %>
     <% end %>
     <% if logged_in? %>
-      <%= link_to "Profile", user_path(current_user.id) %>
-      <%= link_to "Logout", session_path(current_user.id), method: :delete %>
+      <button type="button" class="btn btn-warning btn-lg"><%= link_to "Profile", user_path(current_user.id) %></button>
+      <button type="button" class="btn btn-danger btn-lg"><%= link_to "Logout", session_path(current_user.id), method: :delete %></button>
     <% else %>
-      <%= link_to "Sign up", new_user_path %>
-      <%= link_to "Login", new_session_path %>
+      <button type="button" class="btn btn-info btn-lg"><%= link_to "Sign up", new_user_path %></button>
+      <button type="button" class="btn btn-success btn-lg"><%= link_to "Login", new_session_path %></button>
     <% end %>
     <%= yield %>
   </body>

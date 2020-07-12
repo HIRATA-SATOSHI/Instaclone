@@ -1,10 +1,49 @@
 body {
-  background-color: #fff;
-  color: #333;
+  background-color: #DDDDDD	;
   margin: 33px;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
+}
+
+header{
+  width:auto;
+  color: black;
+  text-align : center;
+}
+
+h1 {
+  font-family: 'fantasy';
+  font-style: normal;
+  text-align: center;
+
+}
+
+.jumbotron { 
+  background-image: url("/assets/Caffe_sample.jpg"); 
+  background-size: cover;
+}
+
+.jumbotron h1 {
+  font-size: 80px;
+  font-weight: 700;
+}
+
+.Insta {
+  // font-family: 'grandam';
+  display     : inline-block;
+  font-size   : 160%;
+  font-weight : bold;
+  color       : #ffffff;
+  text-shadow:  2px  2px 10px #777 ,
+               -2px  2px 10px #777 ,
+                2px -2px 10px #777 ,
+               -2px -2px 10px #777;
+}
+
+.share {
+  font-family: 'Monoton', cursive;
+  color: #CC6699;
 }
 
 p, ol, ul, td {
@@ -34,6 +73,11 @@ a {
 
 th {
   padding-bottom: 5px;
+  text-align: center;
+}
+
+tbody {
+  text-align: center;
 }
 
 td {
@@ -81,4 +125,9 @@ div {
 
 label {
   display: block;
+}
+
+
+btn btn-primary {
+  color:#fff;
 }

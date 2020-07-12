@@ -4,10 +4,10 @@ ja:
       picture: 投稿
       user: ユーザー
     attributes:
-      picture:
+        picture: 投稿
         title: タイトル
         content: 内容
-      user:
+    user:
         Image: 写真
         title: タイトル
         name: 名前

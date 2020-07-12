@@ -1,5 +1,5 @@
 body {
-  background-color: #EEEEEE;
+  background-color: #DDDDDD	;
   margin: 33px;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
@@ -15,6 +15,8 @@ header{
 h1 {
   font-family: 'fantasy';
   font-style: normal;
+  text-align: center;
+
 }
 
 .jumbotron { 
@@ -125,6 +127,7 @@ label {
   display: block;
 }
 
-btn btn {
+
+btn btn-primary {
   color:#fff;
 }

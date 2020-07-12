@@ -1,19 +1,19 @@
 <h1><%= current_user.name %> のお気に入り一覧</h1>
-
-<table>
+<br>
+<table class="container">
   <thead>
-    <tr>
-      <th>投稿者</th>
-      <th>画像</th>
-      <th>投稿内容</th>
+    <tr class="row">
+      <th class="col-md-4">投稿者</th>
+      <th class="col-md-4">画像</th>
+      <th class="col-md-4">投稿内容</th>
     </tr>
   </thead>
   <tbody>
     <% @favorites.each do |favorite| %>
-      <tr>
-        <td><%= favorite.picture.user.name %></td>
-        <td><%= image_tag favorite.picture.image.url %></td>
-        <td><%= favorite.picture.content %></td>
+      <tr class="row">
+        <td class="col-md-4"><%= favorite.picture.user.name %></td>
+        <td class="col-md-4"><%= image_tag favorite.picture.image.url %></td>
+        <td class="col-md-4"><%= favorite.picture.content %></td>
       </tr>
     <% end %>
   </tbody>
